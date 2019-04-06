@@ -1,16 +1,31 @@
-StockReporter will be able to scrape financial data from websites, store that data, and also conduct data analysis on the data for research or to aid in the decision-making process regarding investing.
+# StockReporter
 
-Setup project
--------------
-Step 1: On local, git clone https://github.com/kennylg2/swen_sa_tool.git
-Step 2: You need to add project dependencies. 
-        (Netbeans): Right click the project -> properties -> libraries -> Add Jar/Folder and select "jarfiles" folder.
-        (Eclipse): Right click the project -> properties -> Java Build Path -> Add JARs and select the project name and                          "jarfiles" folder.
+StockReporter is an application that scrapes stock information from financial websites and stores the data in a database.  This project is the result of the SWEN 670 Capstone course at University of Maryland University College.
 
-Databases
----------
+## Getting Started
+
+These instructions will setup the project on your local machine for development and testing.
+
+### Prerequisites
+
+This project was developed with Java, JSoup, and SQLite.  Please note that running this application requires JDK 1.8.  
+    
+### Installation
+
+On your local machine, git clone https://github.com/kennylg2/swen_sa_tool.git
+
+* Netbeans: Right click the project -> Properties -> Libraries -> Add Jar/Folder and select the "jarfiles" folder.
+* Eclipse: Right click the project -> Properties -> Java Build Path -> Add JARs and select the project name and "jarfiles" folder.
+
+
+### Databases
+
 The application has two databases, "stockreporter.dev" for dev and testing and "stockreporter.prod" for production.
 
-Use "create_tbl_vw_master_summary.sql" to create master, summary tables, indexes, and summary view.
+## Testing
 
-Use "master_data.sql" to insert initial data into STOCK_TICKER and STOCK_SOURCE tables.
+Three test packages have been developed.
+
+## Project Phase
+
+During the first phase of this project the summary and historical data will be scraped and added to the database. Additional scraping and analytical tools may be added in later phases of the project. The team is currently working on scraping the summary data.
